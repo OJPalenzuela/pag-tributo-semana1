@@ -31,10 +31,6 @@ body{
     font-size: 1em;
 }
 
-div p{
-    text-align: center;
-}
-
 #atribute-info{
     grid-area: info;
     padding: 1.6em;
@@ -70,6 +66,9 @@ h1{
 
 ul{
     padding: 1em;
+}
+li{
+    margin: 0.8em 0px;
 }
 
 footer{
