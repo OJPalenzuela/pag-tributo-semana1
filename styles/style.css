@@ -11,10 +11,9 @@ body{
 
 #main{
     display: grid;
-    grid-template-columns: 1.3fr 1.3fr 1fr;
-    grid-template-areas: "header header header"
-                        "info info nav"
-                        "footer footer footer";
+    grid-template-areas: "header header"
+                        "info info "
+                        "footer footer";
     padding: 10px;
     border-radius: 8px;
     width: 80%;
@@ -26,43 +25,41 @@ body{
 
 #header{
     grid-area: header;
-    background-color: #051A4D;
-    padding: 1.2em;
+    background-color: #364877;
+    padding: 1em;
     font-size: 1em;
 }
 
-#atribute-info{
-    grid-area: info;
-    padding: 1.6em;
-    text-align: justify;
-    font-size: 0.9em;
+#title{
+    text-align: center;
+    font-size: 1.8em;
+   
+    color:rgb(199, 199, 199);
 }
 
-#navegacion{
-    grid-area: nav;
-    background-color: #50BDDE;
-    padding: 1.6em;
+#tribute-info{
+    grid-area: info;
+    padding: 1.6rem;
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
+
 
 img{
-    width: 100%;
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 #img-caption{
     text-align: center;
-    margin: 0.5em;
+    margin: 1rem 0px 0px 0px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
-h1{
-    text-align: center;
-    font-size: 1.8em;
-    margin: 0.5em;
-    color:rgb(209, 209, 209);
-}
+
 
 ul{
     padding: 1em;
@@ -77,6 +74,13 @@ footer{
     padding: 1.6em;
 }
 
+footer p{
+    text-align: center;
+    font-weight: bold;
+    color:rgb(58, 58, 58);
+}
+
+
 @media screen and (max-width: 768px){
     #main{
         margin: 0px;
@@ -84,7 +88,6 @@ footer{
         grid-template-columns: 1fr;
         grid-template-areas: "header"
                         "info"
-                        "nav"
                         "footer";
         border-radius: 0px;
     }
